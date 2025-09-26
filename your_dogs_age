@@ -1,0 +1,10 @@
+#include <iostream>
+int main(){
+    int your_Dogs_Age;
+    std::cout << "What is your dog's age? \n";
+    std::cin >> your_Dogs_Age;
+    int early_years = 21;
+    int later_years = (your_Dogs_Age - 2) * 4;
+    int inhumanyears = later_years + early_years;
+    std::cout << "Your dog is " << inhumanyears << " human years old \n";
+}
