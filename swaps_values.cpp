@@ -14,4 +14,21 @@ int main (){
     
     // Display the swapped values (b first, then a)
     cout << "Swapped values: " << b << " and " << a;
+
+
+
+/*#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int a = 1;
+   int b = 2;
+   
+    a = b = 2;
+    cout << a;
+    b = a = 1;
+    cout << b; 
+*/
 }
