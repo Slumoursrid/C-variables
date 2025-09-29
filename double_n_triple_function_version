@@ -1,0 +1,19 @@
+#include <iostream>
+/* A small program that has the same purpose as the "double_n_triple" program
+   but this is the first time I'm using a C++ function */
+// Function allowing user input with the entered value as return
+int entry_user_func(){                                                     
+    
+    int integer{};
+    std::cout << "Enter an integer: ";
+    std::cin >> integer;
+    
+    return integer;
+}
+// Main function calling the above function and calculating to give the double and triple of the entered value
+int main(){
+    
+    int entry{entry_user_func()};  // Fixed: was calling calcul1() instead of entry_user_func()
+    std::cout << "The double of this integer is: " << entry * 2 << '\n';
+    std::cout << "The triple of this integer is: " << entry * 3 << '\n';
+}
