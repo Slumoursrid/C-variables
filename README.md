@@ -1,2 +1,3 @@
 # C-variables
-Variables initialization and usage in c++
+Variables initialization and usage in C++.
+Functions defintions and call.
