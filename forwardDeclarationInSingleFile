@@ -1,0 +1,45 @@
+#include <iostream>
+
+// Forward declaration  doMath function
+int doMath(int, int, int, int); 
+
+//Forward declaration add function 
+int add(int x, int y);
+
+// Forward declaration add2 function
+int add2(int x, int y);
+
+
+// Use of doMath and add functions
+int main()
+{
+    //Will compile and link
+    int forwardDeclarationtest1 = doMath(1, 2, 3, 4);
+    std::cout << forwardDeclarationtest;
+    
+    //Will not complile, too many arguments
+    std::cout << "3 + 4 + 5 = " << add(3, 4, 5) << '\n';
+    
+    // Will not compile declaration function add2 has 2 parameters and add2 Definition has 3 parameters
+    std::cout << "3 + 4 + 5 = " << add2(3, 4, 5) << '\n';
+
+    return 0;
+}
+
+//Definition of function doMath
+int doMath(int first, int second, int third, int fourth)
+{
+     return first + second * third / fourth;
+}
+
+//Definition add function 
+int add(int x, int y)
+{
+    return x + y;
+}
+
+//Definition add2 function
+int add(int x, int y, int z)
+{
+    return x + y + z;
+}
